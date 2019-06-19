@@ -1,0 +1,59 @@
+html { 
+    background: black;
+}
+header h1 {color: #0076bb; }
+nav ul {padding: 0;}
+nav ul li {
+    float: left;
+    list-style-type: none;
+
+}
+nav ul li a {
+    display: block;
+    padding: .5rem 1rem;
+    background-color: #f89c1f;
+}
+main h1{
+    margin:3rem 0 0 0;
+    color: #03585e;
+}
+main h2{
+    color: rgba(52, 174, 245, 0.5);
+
+}
+
+p {
+    margin: 0 0 2px 0;
+    color: white;
+}
+hr {
+    margin-top:2rem;
+}
+
+#videos{
+    display: flex;
+    flex-wrap:wrap;
+}
+
+#business,#personal{
+    flex: 45%;
+    padding: 10px;
+}
+
+#clip {
+    padding: 0 0 50px 0;
+}
+
+#audio{
+    display:flex;
+    flex-wrap:wrap;
+}
+audio{
+    flex: 40%;
+    padding: 0 20px 0 0;
+}
+
+canvas {
+    border:1px solid white;
+  }
+

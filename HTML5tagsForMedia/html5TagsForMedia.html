@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML5 Tags for Media</title>
+        <link href="style.css" rel="stylesheet">
+        <script src="scripts2.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>HTML5 Tags for Media</h1>
+        </header>
+        <hr>
+        <nav>
+            <ul>
+                <li><a href= "../index.html">Home</a></li>
+            </ul>
+        </nav>
+        <br>
+        <hr>
+        <main>
+            <h1>Video Tags</h1>
+            <div id = videos>
+                <div id = business>
+                    <h2>Business Videos</h2>
+                    <div id = clip>
+                        <p>Normal video with controls</p>
+                        <video width = "500" controls>
+                            <source src="videos/MVI_8073.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div id = clip>
+                        <p>Video with autoplay attribute</p>
+                        <video width="500" controls autoplay muted>
+                            <source src="videos/TylerAnnieFirstLook-PhoneSmall.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+                <div id = personal>
+                    <h2>Family Videos</h2>
+                    <div id = clip>
+                        <p>Video with onmouseover and onmouseout event</p>
+                        <video id = "video2" width = "500" controls onmouseover="play()" onmouseout="pause()">
+                            <source src="videos/NightLightsSmall.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div id = clip> 
+                        <p>Video with buttons to control properties using JavaScript</p>
+                        <button onclick="playPause()">Play/Pause</button> 
+                        <button onclick="makeBig()">Big</button>
+                        <button onclick="makeSmall()">Small</button>
+                        <button onclick="makeNormal()">Normal</button>
+                        <br><br>
+                        <video id="video1" width="500">
+                            <source src="videos/Jan-April2019Small.mp4" type="video/mp4">
+                            Your browser does not support HTML5 video.
+                        </video>
+                    </div>
+                </div> 
+            </div>
+            <h1>Audio Tags</h1>
+            <div id = audio>
+                <audio controls>
+                    <source src="audio/Ode by Christopher Young (Christopher Young) Artlist.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+                <audio controls>
+                        <source src="audio/Wide Awake by Caleb Etheridge (Always Dreaming) Artlist.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <h1>Canvas Tags</h1>
+                <div id = canvas>
+                    <p>drawing a rectangle in canvas</p>
+                    <canvas id="myCanvas">Your browser does not support the HTML5 canvas tag.</canvas>
+                    
+                    <p>drawing a image in canvas from another image and enlarging it</p>
+                    <canvas id="myDrawing" height ="300" width = "400">
+                        <p>Canvas not supported</p>
+                    </canvas>
+                    <img class ="hidden" id = "world" src = "images/littleplanet.jpg" alt= "painted face">
+
+                </div>
+        </main>
+        <footer></footer>
+
+    </body>
+        <script src="scripts.js"></script>
+
+    
+</html>
