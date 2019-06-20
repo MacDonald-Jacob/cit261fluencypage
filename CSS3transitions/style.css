@@ -1,0 +1,114 @@
+#background img {
+    animation-name: backgroundFadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite; 
+    animation-duration: 15s;
+    animation-direction: alternate; 
+    position:absolute;
+}
+#background img:nth-of-type(1) {
+    animation-delay: 15s;
+}
+#background img:nth-of-type(2) {
+    animation-delay: 10s;
+}
+
+#background img:nth-of-type(3) {
+    animation-delay: 5s;
+}
+
+#background img:nth-of-type(4) {
+    animation-delay: 1s;
+}
+
+@keyframes backgroundFadeInOut {
+    0% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/*Sliding in */
+#picture2{
+        display: flex;
+        flex-wrap:wrap;
+     
+}
+#img1 {
+    margin-right:10px;
+    margin-bottom: 10px;
+    transition: opacity 1.0s linear 0s;
+    animation-duration: 4s;
+    animation-name: slide1;
+ }
+ 
+ #img2 {
+     margin-bottom:10px;
+    transition: opacity 1.0s linear 0s;
+    animation-duration: 2s;
+    animation-name: slide2;
+ }
+ 
+ #img3 {
+    margin-right:10px;
+    transition: opacity 0.5s linear 0s;
+    animation-duration: 5s;
+    animation-name: slide3;
+  }
+ 
+ #img4 {
+    transition: opacity 1.5s linear 0s;
+    animation-duration: 4s;
+    animation-name: slide4;
+}
+ 
+  @keyframes slide2 {
+    from {
+       margin-left: -50rem;
+    }
+    to {
+       margin-left: 0%;
+    }
+  }
+ 
+  @keyframes slide4 {
+    from {
+        margin-left: -50rem;
+    }
+  
+    to {
+        margin-right: 0%;
+    }
+  }
+ 
+  @keyframes slide1 {
+    from {
+        margin-bottom: -50rem;
+        margin-right: -50rem;
+    }
+  
+    to {
+        margin-bottom:0%;
+        margin-right: 0%;
+    }
+  }
+  
+ 
+  @keyframes slide3 {
+    from {
+        margin-top: -5rem;
+        margin-left: 50rem;
+    }
+    to {
+        margin-bottom: 0%;
+        margin-left: 0%
+    }
+  }
