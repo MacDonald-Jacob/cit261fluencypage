@@ -112,3 +112,34 @@
         margin-left: 0%
     }
   }
+
+  .transitioner1{
+      width:300px;
+      height:168px;
+      transition-property: width;
+      transition-duration: 3s;
+      transition-timing-function: linear;
+      transition-delay: 1s;
+  }
+  .transitioner1:hover{
+      width:500px;
+  }
+
+ #transforms{
+     display:flex;
+     flex-wrap:wrap;
+     justify-content: space-evenly;
+ }
+ .tran{
+     margin-top:20rem;
+     margin-bottom:1rem;
+ }
+ .image1:hover{
+     transform: rotate(180deg);
+ }
+ .image2:hover{
+     transform: skewY(-10deg);
+ }
+ .image3:hover{
+     transform: scaleX(2.0);
+ }
